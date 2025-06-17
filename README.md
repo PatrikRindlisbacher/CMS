@@ -1,4 +1,4 @@
-# CMS Joomla Cassipeia CSS 
+# CMS Joomla Cassipeia CSS (gedacht nur für unsere Arbeitsgruppe !!! )
 
 Installation:
 - Codespace öffnen

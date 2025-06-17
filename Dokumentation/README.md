@@ -7,10 +7,9 @@
 - Inhalt -> Beiträge -> Optionen -> Beiträge -> Position der Beitragsinfo -> darunter (HTML Ausgabe)
    (Damit auch Bilder geändert werden können voa Frontend)
 
-Default setzen für Beiträge --> Bild noch erstellen
+- Default setzen für Beiträge --> "Pendenz Doku-Bild noch erstellen"
 
-
-- System -> Verwalten -> Erweiterungen -> COm_content  ????? 
+- System -> Verwalten -> Erweiterungen -> Com_content  ????? 
 
 - Child Template erstellen -> mit Name -> Keine unnötigen Overrides unabsichtlich erstellen !!!
 
@@ -23,9 +22,9 @@ Default setzen für Beiträge --> Bild noch erstellen
 
 - Schlagwort erstellen --> für Kategorie Blog 
 
-- Beitrag erstellen mit Kategorie 
+- Beiträg erstellen mit Kategorie --> und für "Cover" Beiträge das Schlagwort zuweisen
 
-- Menü erste Uberschriften erstellen
+- Menü erste Ueberschriften erstellen
 
 
 - user.scc kopieren -> ev. automatisiert mit FTP .vscode/sftp.json
