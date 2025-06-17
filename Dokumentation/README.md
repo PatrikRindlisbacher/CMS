@@ -17,7 +17,11 @@
 user.scc kopieren
 user.js  kopieren
 
-Slidesshow modul erstellen mit ausgabe in Bereich Debug
+
 Main Menü fertig anpassen 
 
 Startseite Dummy
+
+
+Slidesshow modul erstellen mit ausgabe in Bereich Debug
+![alt text](image.png)
