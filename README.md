@@ -5,7 +5,7 @@
 
 Installation:
 - Codespace öffnen
-- npm install um die abhänigen Module zu installieren
+- npm install um die abhänigen Module zu installieren  
     "postcss": "^8.5.5"  
     "postcss-cli": "^11.0.1"  
     "postcss-discard-comments": "^7.0.4"  
@@ -14,9 +14,9 @@ Installation:
 - chmod +x ./node_modules/.bin/postcss
 
 Benutzung:
-starten         npx postcss src/css/main.css -o dist/main.css
+starten&nbsp;    npx postcss src/css/main.css -o dist/main.css
 
-Ergebnis        im DIST Ordner ist die fertige USER.CSS
+Ergebnis&nbsp;   im DIST Ordner ist die fertige USER.CSS
 
-Verwenden:
+Verwenden:  
 user.css manuell oder per FTP Kopieren in Webspace 
