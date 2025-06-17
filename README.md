@@ -1,9 +1,10 @@
-# CMS Joomla Cassipeia CSS (gedacht nur für unsere Arbeitsgruppe !!! )
+# CMS Joomla Cassiopeia CSS  
+(gedacht nur für unsere Arbeitsgruppe !!! )
 
 
 [Zur Dokumentation für Joomla Inhalt anpassen ](Dokumentation/README.md)
 
-Installation:
+# Installation:
 - Codespace öffnen
 - npm install um die abhänigen Module zu installieren  
     "postcss": "^8.5.5"  
