@@ -1,5 +1,5 @@
 Das Javascript einfach ins template kopieren und läuft
 
-in den Ordner  <js>   /media/template/site/Cassiopeia_cild
+in den Ordner    /media/template/site/Cassiopeia_cild/js
 
 ![alt text](image.png)
