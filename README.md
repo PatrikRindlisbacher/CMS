@@ -1,4 +1,4 @@
-# CMS
+# CMS Joomla Cassipeia CSS 
 
 Installation:
 - Codespace öffnen
@@ -6,4 +6,8 @@ Installation:
 - chmod +x ./node_modules/.bin/postcss
 
 Benutzung:
-npx postcss main.css -o dist/user.css
+starten     npx postcss main.css -o dist/user.css
+Ergebnis    im DIST Ordner ist die fertige USER.CSS
+
+Verwenden:
+user.css manuell oder per FTP Kopieren in Webspace 
