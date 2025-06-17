@@ -12,7 +12,7 @@ Default setzen für Beiträge --> Bild noch erstellen
 
 - System -> Verwalten -> Erweiterungen -> COm_content  ????? 
 
-- Child Template erstellen -> Keine unnötigen Overrides unabsichtlich erstellen !!!
+- Child Template erstellen -> mit Name -> Keine unnötigen Overrides unabsichtlich erstellen !!!
 
 - Logo im Child Template hinterlegen
    --> Stiky Header Fluid ???
@@ -24,7 +24,8 @@ Default setzen für Beiträge --> Bild noch erstellen
 - Menü erste Uberschriften erstellen
 
 
-user.scc kopieren
+- user.scc kopieren -> ev. automatisiert mit FTP .vscode/sftp.json
+
 - [Zur Dokumentation JS ](../JavaScript/README.md)
 user.js  kopieren
 
