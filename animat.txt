@@ -1,0 +1,178 @@
+/* ======================   Container-Anpassungen  ====================== */
+.container-component,
+.container-header,
+.container-footer {
+  max-width: 1600px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+
+/* ======================
+   Header Layout
+====================== */
+@media (min-width: 768px) {
+  .header.container-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    gap: 2rem;
+  }
+
+  .header .navbar-brand {
+    flex: 0 0 auto;
+  }
+
+  .header .container-nav {
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .header .mod-menu {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+  }
+
+  .header .mod-menu a {
+    text-decoration: none;
+    font-weight: 500;
+    color: white;
+  }
+
+  .header .mod-menu a:hover {
+    color: var(--riki-hell);
+  }
+}
+
+.header {
+  background: linear-gradient(90deg, var(--riki-dunkel), var(--riki-mittel) 35%, var(--riki-hell));
+  left: 20px;
+  right: 20px;
+}
+
+
+/* ======================
+   Footer Styling
+====================== */
+.footer {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  background: linear-gradient(135deg, var(--riki-dunkel), var(--riki-mittel));
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  z-index: 1000;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+}
+
+footer.container-footer {
+  margin: 1rem 2rem;
+  padding: 0.75rem 1.5rem;
+  background: linear-gradient(135deg, var(--riki-dunkel), var(--riki-mittel));
+  border-radius: 2px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .mod-menu {
+  display: flex;
+  gap: 2rem;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+footer .mod-menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+footer .mod-menu a:hover {
+  color: #ddd;
+}
+
+
+/* ======================
+   Slideshow (Hintergrund)
+====================== */
+.background-slideshow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.background-slideshow .slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  animation: fade 15s infinite;
+}
+
+.background-slideshow .slide:nth-child(1) { animation-delay: 0s; }
+.background-slideshow .slide:nth-child(2) { animation-delay: 5s; }
+.background-slideshow .slide:nth-child(3) { animation-delay: 10s; }
+
+
+/* ======================
+   Slideshow (Sidebar / News)
+====================== */
+.slideshow-news {
+  position: relative;
+  width: 100%;
+  max-width: 250px;
+  height: 300px;
+  overflow: hidden;
+}
+
+.slideshow-news .slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  animation: fade 15s infinite;
+}
+
+.slideshow-news .slide:nth-child(1) { animation-delay: 0s; }
+.slideshow-news .slide:nth-child(2) { animation-delay: 5s; }
+.slideshow-news .slide:nth-child(3) { animation-delay: 10s; }
+
+
+/* ======================
+   Animation für Slides
+====================== */
+@keyframes fade {
+  0% { opacity: 0; }
+  10% { opacity: 1; }
+  30% { opacity: 1; }
+  40% { opacity: 0; }
+  100% { opacity: 0; }
+}

@@ -1,0 +1,19 @@
+/* ===========================  Footer Menue im Fussbereich==================== */
+.container-footer {                                                                       /* Container für den Footer fix am unteren Rand*/
+  position: sticky;                                                                       /* Fixiert den Footer am unteren Rand der Seite */
+  bottom: 0;                                                                              /* Positioniert den Footer am unteren Rand */
+  height: 35px;                                                                           /* fixe Höhe der Fusszeile  */ 
+  width: 100%;                                                                            /* Breite des Footers */
+    /* Darstellung */
+  background-color: var(--header-header-background-color);                                /* Hintegrundfarbe fals nicht überdeckt von Bild */
+  background-image: var(--header-header-background-image);                                /* Das Hintergrundbild von Cassiopeia überschreiben oder Leer setzen */
+}
+
+.container-footer .grid-child {                                                           /* Container für den Footer fix am unteren Rand */
+  height: 35px;                                                                           /* fixe Höhe der Fusszeile  */
+  padding-left: 20px;                                                                     /* Abstand links   damit der text nicht aussen klebt */                 
+  padding-right: 20px;                                                                    /* Abstand rechts  damit der text nicht aussen klebt */
+  padding-top: 0;                                                                         /* Abstand oben    damit sich den fuss verkleinert */
+  padding-bottom: 0;                                                                      /* Abstand unten   damit sich den fuss verkleinert */
+}
+

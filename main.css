@@ -1,0 +1,48 @@
+/* ======================== Globale Grundlagen (Basiseinstellungen) ============================= */
+@import url("color_variablen.css");                                             /* Farben und Variablen */                  
+@import url("typographie.css");                                                 /* Schriftarten und -größen */    
+@import url("body.css");                                                        /* Body Einstellungen */
+@import url("grid.css");                                                        /* Grid Einstellungen */
+@import url("container.css");                                                   /* Container Einstellungen */
+/* ======================== Strukturelle Komponenten (Seitenaufbau) ============================= */
+@import url("header.css");                                                      /* Header Einstellungen */
+@import url("brand.css");                                                       /* Logo Einstellungen */
+@import url("menue_Chatgpt.css");                                                       /* Menue Einstellungen */
+@import url("footer.css");                                                      /* Footer Einstellungen */
+/* ======================== Inhaltsbereiche (Content-spezifisch)  =============================== */
+@import url("slideshow-background.css");                                        /* Slideshow Hintergrund Einstellungen */
+@import url("slideshow-news.css");                                              /* Slideshow News Einstellungen */
+@import url("category-blog.css");                                               /* Kategorie Blog Einstellungen */
+@import url("categories.css");                                                  /* Kategorien Einstellungen */
+@import url("com_articles.css");                                                /* Beiträge Artikel Einstellungen */
+@import url("mod_articles.css");                                                /* Module Artikel Einstellungen */
+@import url("contact.css");                                                     /* Kontakt-Formular Einstellungen */
+@import url("gallery.css");                                                     /* Galerie Einstellungen */
+/* ======================== Seiten-spezifisch (spezielle Fälle, zuletzt)  ======================= */
+@import url("home.css");                                                        /* Als Letztes die Startseite, damit es nicht übersteuert wird */
+
+/* ========================    Card Hintergrundfarbe ======================= */
+.card-body {
+    background-color: #eaeaea76 !important;                                   /* Hintergrundfarbe beim Hover-Effekt */  
+}
+.card-header {
+    background-color: #bbbbbb9f !important;                                   /* Hintergrundfarbe beim Hover-Effekt */  
+}
+.bottom-b.card  {
+    background-color: #ffffff56 !important;                                   /* Hintergrundfarbe beim Hover-Effekt */  
+} 
+
+figure {
+  margin: 0;
+  padding: 0;
+  /* outline: 1px solid red; */  /* zum Testen */
+}
+
+
+/* ========================    Bilder in Beiträgen ohne Rand Beispiel auch für logo im kopf ======================= */
+img {
+  border: none;
+  margin: 0;
+  padding: 0;
+  display: block;
+}

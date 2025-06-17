@@ -1,0 +1,18 @@
+.container-component {                                                          /* Hauptinhalt in der Mitte der Seite */                       
+    /*background-color: rgba(45, 45, 45, 0.5) !important;*/
+    background-color: #ffffffd4;                                                  /* Weißer leicht transpartenter Hintergrund für den Hauptblock */
+    padding: 10px;                                                                /* Innenabstand für den Hauptblock nicht zu viel !! */
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);                                   /* Optional: leichter Schatten */
+}
+
+
+@media (max-width: 1024px) {                                                    /* Ab 1024px und kleiner */
+  .container-sidebar-left {                                                     /* Sidebar links ausblenden auf Mobilen Geräten */ 
+    display: none;
+  }
+  .container-component {                                                        /* Hauptinhalt innerhalb der Seite */
+    padding-left: 1rem !important;                                              /* Innerer Abstand links */
+    padding-right: 1rem !important;                                             /* Innerer Abstand rechts */
+  }
+}

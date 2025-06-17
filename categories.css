@@ -1,0 +1,114 @@
+/* =================== Kategorie categories__items mit Bild und Text unten ================ */
+
+.com-content-categories__items {                                                /* Container für Kategorie-Items – 4 Spalten */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+
+.com-content-categories__item {                                                 /* Einzelnes Kategorie-Item */
+  width: 300px !important;
+  background-color: #4a4a4a !important;
+  color: #e4e4e4 !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 5px;
+}
+
+
+.com-content-categories__item img {                                             /* Bildcontainer */
+  width: 300px !important;
+  height: 300px !important;
+  object-fit: cover;
+  display: block;
+  max-width: none !important;
+  max-height: none !important;
+  order: -1;
+  margin-bottom: 6px !important;
+}
+
+.com-content-categories__item-title-wrapper {                                   /* Wrapper für Titel (falls vorhanden) */                         
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100% !important;
+}
+
+
+.com-content-categories__item-title {                                       /* Titel der Kategorie */
+  font-size: 1rem !important;
+  font-weight: 600 !important;
+  color: #ffffff !important;
+  margin: 1px 0 !important;
+  line-height: 1.0 !important;
+}
+
+
+
+/* Beschreibungstext (Introtext o.ä.) */
+.com-content-categories__item p {
+  margin: 2px 0 !important;
+  padding: 0 !important;
+  line-height: 1.1 !important;
+  font-size: 0.95rem;
+}
+
+
+/* Sichtbaren Titel über den Link legen */
+.com-content-categories__item {
+  position: relative;
+}
+
+.box-link {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  display: block;
+  text-decoration: none;
+}
+
+.com-content-categories__item-title,
+.com-content-categories__item-title a {
+  position: relative;
+  z-index: 2;
+  color: #ffffff !important;
+  text-decoration: none !important;
+  font-size: 1rem !important;
+  font-weight: 600 !important;
+}
+
+.com-content-categories__item {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border-radius: 6px;
+}
+
+/* Hover-Effekt */
+.com-content-categories__item:hover {
+  transform: translateY(-4px) scale(1.015);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+
+/* ========================    Kategorie-Ansicht Anpassungen auf kleineren Breakpoints =========================== */
+@media (max-width: 1200px) {
+  .com-content-categories__items {
+    justify-content: space-around;
+  }
+}
+
+@media (max-width: 900px) {
+  .com-content-categories__item {
+    width: calc(50% - 0.5rem);                               /* Zwei Kacheln pro Zeile */
+  }
+}
+
+@media (max-width: 600px) {
+  .com-content-categories__item {
+    width: 100%;                                             /* Eine Kachel pro Zeile */
+  }
+}
+

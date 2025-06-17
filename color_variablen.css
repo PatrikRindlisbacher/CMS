@@ -1,0 +1,59 @@
+:root {
+  /* Firmen Farben hier Dokumentieren ale Text  */
+  --header-header-background-image: linear-gradient(135deg,rgba(185, 177, 177, 0.51) 0%,rgba(167, 160, 160, 0.54) 100% ); /* Hinterghrund Bild vom Template direkt übersteuern PS: ev. auch mit Transparenz*/
+  --header-header-background-color:rgba(249, 249, 249, 0);                                                           /* Farbe wenn kein Bild */
+  --header-header-border-radius: 0.5rem;                                                                              /* Border Radius vom Header */
+
+
+  --link-color:rgb(4, 3, 31);
+  --brand-logo-img-width: 20vw;                                                                           /* Logo Breite in vw = % vom Viewport */
+  --brand-logo-img-min-width: 140px;                                                                      /* Logo min Höhe in px */
+  --brand-logo-img-max-width: 300px;                                                                      /* Logo max Höhe in px */
+
+
+
+
+
+  --color-primary: #000000;
+  --color-accent: #ff9900;
+  --bg-background: rgba(244, 244, 244, 0.9);
+  --bg-cards: rgba(238, 238, 238, 0.85);
+  --bg-card: rgba(255, 255, 255, 0.95);
+  --bg-primary: #000000;
+  --bg-accent: #ff9900;
+  --text-on-primary: #ffffff;
+  --text-on-light: #000000;
+  --text-on-accent: #000000;
+  --alert-success-bg: #dff0d8;
+  --alert-success-text: #3c763d;
+  --alert-warning-bg: #fcf8e3;
+  --alert-warning-text: #8a6d3b;
+  --alert-error-bg: #f2dede;
+  --alert-error-text: #a94442;
+  --card-shadow: rgba(0, 0, 0, 0.1);
+  --card-border: 1px solid rgba(0, 0, 0, 0.1);
+  --cards-border: 1px solid rgba(0, 0, 0, 0.05);
+  --cards-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  --radius: 0.75rem;
+  --radius-card: 0.75rem;
+  --radius-cards: 1rem;
+
+  --riki-dunkel: #000000;
+  --riki-mittel: #707070;
+  --riki-hell: #c0c0c0;
+
+  --cassiopeia-color-primary: var(--color-primary);
+  --cassiopeia-color-link: #224faa;
+  --link-color: #8f8f8f;
+  --link-color-rgb: 34, 79, 170;
+  --cassiopeia-color-hover: #3a3a3a;
+  --link-hover-color: #898989;
+  --link-hover-color-rgb: 66, 64, 119;
+  --card-bg: #d3d3d3; /* hellgrau */
+  --color-card-bg: #d3d3d3; /* deine Wunschfarbe */
+  --card-color: #be0909; /* Textfarbe auf der Karte */
+
+
+
+
+}

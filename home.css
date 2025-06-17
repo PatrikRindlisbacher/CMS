@@ -1,0 +1,56 @@
+
+
+/* ================    Startseite von Haupmenu nur ausblenden wenn nicht edit Mode ==================== */
+body.itemid-101:not(.layout-edit) .container-component {                                                 /* Nur im Edit Mode anzeigen */
+      display: none !important;                                                           /* Ausblenden der Komponenten */
+  }
+
+
+
+
+
+/* ========================   Siedbar Links überarbeiten ======================= */
+body.itemid-101 .mod-articles-item {
+
+  background-color: #fcfbfb4f !important;
+  padding: 3rem !important;
+  border: 1px solid #8d8d8d5c !important; /* hellgrau */
+  border-radius: 0.3rem !important;
+}
+
+
+
+/* Nur auf der Startseite (itemid-101) */
+body.itemid-101 .site-grid {
+  background-color: transparent !important;
+  box-shadow: none !important;
+  padding: 0.5rem !important;
+}
+
+/* Sidebar links entschärfen */
+body.itemid-101 .container-sidebar-left {
+  background: transparent !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+}
+
+/* Sidebar-Box Neuheiten: ruhiger und rahmenlos */
+body.itemid-101 .sidebar-left.card {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+}
+
+/* Titel "Neuheiten" ausblenden (optional) */
+body.itemid-101 .sidebar-left .card-header {
+  display: none;
+}
+
+/* Inhalt (Text + Bild) optisch freistellen */
+body.itemid-101 .sidebar-left .card-body {
+  padding: 0;
+  background: transparent;
+  border: none;
+  text-align: center;
+}

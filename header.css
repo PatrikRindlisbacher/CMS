@@ -1,0 +1,25 @@
+/* ========================    Header fixieren und kleiner machen ======================= */  
+
+header.header {
+  /* Layout */
+  display: flex;                                                                          /* Flexbox-Layout für horizontale Ausrichtung */
+  flex-direction: row !important;                                                         /* Immer nebeneinander */
+  flex-wrap: nowrap !important;                                                           /* Kein Umbruch – wichtig für mittlere Viewports */
+  justify-content: space-between;                                                         /* Logo links, Menü rechts */
+  align-items: center;                                                                    /* Vertikale Zentrierung */
+  overflow: visible;                                                                      /* !! Ja nicht hidden sonst wird das Menü abgeschnitten */
+
+  /* Abmessungen & Abstand */
+  height: auto;                                                                           /* Höhe passt sich Inhalt an */
+  padding: 0.5rem 1rem;                                                                   /* Luft oben/unten und seitlich */
+  border-radius: var(--header-header-border-radius);                                      /* Abgerundete Ecken in rem oder px */
+
+  /* Positionierung */
+  position: sticky;                                                                       /* Bleibt oben fixiert */
+  top: 0;                                                                                 /* Am oberen Rand */
+  z-index: 1000;                                                                          /* Über anderen Inhalten */
+
+  /* Darstellung */
+  background-color: var(--header-header-background-color);                                /* Hintegrundfarbe fals nicht überdeckt von Bild */
+  background-image: var(--header-header-background-image);                                /* Das Hintergrundbild von Cassiopeia überschreiben oder Leer setzen */
+}

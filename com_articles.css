@@ -1,0 +1,107 @@
+.com-content-article__body {                                    /* einzelner Joomla Beitrag */                    
+    background-color: rgba(189, 189, 189, 0.863) !important;      /* hellblau Transparent */
+    padding-left: 20px;                                         /* Abstand links   damit der text nicht aussen klebt */                 
+    padding-right: 20px;                                        /* Abstand rechts  damit der text nicht aussen klebt */
+    padding-top: 20px;                                          /* Abstand oben    damit der text nicht aussen klebt */
+    padding-bottom: 20px;                                       /* Abstand unten   damit der text nicht aussen klebt */
+}
+
+
+/* ==================  Einzelansicht von einem Beitrag mit Bild rechts und responsive ======================= */
+
+/* Container für gesamte Artikel in Einzelansicht - Text links, Bild rechts */
+.com-content-article.item-page {
+  display: flex;
+  flex-direction: row; /* Standardanordnung nebeneinander */
+  flex-wrap: nowrap;
+  /* align-items: flex-start; */
+  align-items: stretch; /* 🆕 Bild- und Textspalte gleich hoch */
+  gap: 1rem;
+  background-color: rgba(215, 214, 214, 0.775);
+  border-radius: 0.50rem;
+  padding:0.9rem;
+
+}
+
+/* Textbereich - rechts mit flex-order */
+.com-content-article.item-page .com-content-article__body {
+  flex: 2;                        /* nimmt etwa 2/3 der Breite ein */
+  order: 2;                       /* Text zuerst, links */
+  padding: 1.5rem;
+  background-color: rgba(189, 189, 189, 0.863);
+  border-radius: 0.50rem;
+}
+
+
+
+/* Hover-Effekt */
+.com-content-article.item-page figure.item-image:hover img {
+  transform: scale(1.1);
+}
+
+/* ======================= Hover-Effekt mit Texthinweis beim Bild ======================= */
+
+
+/* Der Hinweistext „Klicken zum Vergrößern“ erscheint beim Überfahren des Bildes */
+.com-content-article.item-page figure.item-image::after {
+  content: "Klicken zum Vergrößern";           /* Der sichtbare Hinweistext */
+  position: absolute;                          /* Absolute Positionierung im Bild-Container */
+  bottom: 8px;                                 /* Abstand vom unteren Rand */
+  left: 8px;                                   /* Abstand vom linken Rand */
+  background-color: rgba(0, 0, 0, 0.6);        /* Dunkler halbtransparenter Hintergrund */
+  color: white;                                /* Weiße Textfarbe für Kontrast */
+  padding: 4px 8px;                            /* Innenabstand (etwas Luft um den Text) */
+  font-size: 0.85rem;                          /* Etwas kleinere Schriftgröße */
+  border-radius: 4px;                          /* Abgerundete Ecken */
+  opacity: 0;                                  /* Unsichtbar im Normalzustand */
+  transition: opacity 0.3s ease;              /* Weiche Überblendung beim Einblenden */
+  pointer-events: none;                        /* Klicks gehen weiter aufs Bild (wichtig!) */
+}
+
+/* Beim Hover über das Bild wird der Hinweis eingeblendet */
+.com-content-article.item-page figure.item-image:hover::after {
+  opacity: 1;                                  /* Sichtbar beim Hover */
+}
+
+
+/* =================== Artikelansicht: Textbereich =================== */
+.com-content-article.item-page .com-content-article__body {
+  order: unset;                                                                 /* Keine erzwungene Reihenfolge */
+  width: 100%;                                                                  /* Volle Breite */
+}
+
+.com-content-article.item-page figure.item-image {
+  order: unset;                                                               /* Keine erzwungene Reihenfolge */
+  width: 100% !important;
+  position: relative;                                     /* Stelle sicher, dass der Bild-Container relativ positioniert ist,    damit wir den Text absolut im Verhältnis dazu positionieren können */
+  flex: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 300px;
+  margin: 0 auto;                                                               /* zentriert das Bild */
+  border-radius: 0.5rem;
+}
+
+.com-content-article.item-page figure.item-image img {
+  width: 100% ;                                                                 /* Volle Breite */
+  height: auto ;                                                                /* Höhe proportional */
+  max-height: 40vh;                                                             /* Maximale Höhe: 40 % des sichtbaren Browserfensters */
+  display: block;
+  object-fit: cover;                                                            /* Ganze Bildfläche wird gezeigt, mit evtl. Rand */
+  border-radius: 0.5rem;                                                        /* Abgerundete Ecken für modernes Design */
+  transition: transform 0.3s ease-in-out;                                       /* Animation für Zoom-Effekt */
+  cursor: zoom-in;                                                              /* Mauszeiger wird zur Lupe – Hinweis auf Interaktivität */
+}
+
+@media (max-width: 768px) {
+  .com-content-article.item-page {
+    flex-direction: column;
+  }
+
+  .com-content-article.item-page figure.item-image,
+  .com-content-article.item-page .com-content-article__body {
+    width: 100%;
+    max-width: 100%;
+  }
+}

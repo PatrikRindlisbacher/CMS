@@ -1,0 +1,68 @@
+/* ========================    Blog -Liste ======================= */
+
+/* Gemeinsamer Style für ALLE Blog-Kacheln (leading + normal) */
+.com-content-category-blog__items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem 0;
+}
+
+.com-content-category-blog__item.blog-item {
+  width: 300px;
+  background-color: #4a4a4a;
+  color: #e4e4e4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 5px;
+  border-radius: 6px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.com-content-category-blog__item.blog-item:hover {
+  transform: translateY(-4px) scale(1.015);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.com-content-category-blog__item .item-image img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  margin-bottom: 0px;
+  display: block;
+}
+
+
+
+
+
+.com-content-category-blog__item .item-content {
+  text-align: center;
+  padding: 0 10px;
+}
+
+.com-content-category-blog__item h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 6px 0 2px;
+  line-height: 1.0;
+}
+
+.com-content-category-blog__item p {
+  margin: 2px 0;
+  font-size: 0.95rem;
+  line-height: 1.2;
+  color: #e4e4e4;
+}
+
+
+
+
+/* ========================    Bilder haten einen kleinen rand oben beim Kategorie blog======================= */
+figure.item-image {
+  margin: 0 !important;
+  padding: 0 !important;
+}

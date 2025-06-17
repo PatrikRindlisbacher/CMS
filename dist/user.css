@@ -1,0 +1,1029 @@
+/* ======================== Globale Grundlagen (Basiseinstellungen) ============================= */
+:root {
+  /* Firmen Farben hier Dokumentieren ale Text  */
+  --header-header-background-image: linear-gradient(135deg,rgba(185, 177, 177, 0.51) 0%,rgba(167, 160, 160, 0.54) 100% ); /* Hinterghrund Bild vom Template direkt übersteuern PS: ev. auch mit Transparenz*/
+  --header-header-background-color:rgba(249, 249, 249, 0);                                                           /* Farbe wenn kein Bild */
+  --header-header-border-radius: 0.5rem;                                                                              /* Border Radius vom Header */
+
+
+  --link-color:rgb(4, 3, 31);
+  --brand-logo-img-width: 20vw;                                                                           /* Logo Breite in vw = % vom Viewport */
+  --brand-logo-img-min-width: 140px;                                                                      /* Logo min Höhe in px */
+  --brand-logo-img-max-width: 300px;                                                                      /* Logo max Höhe in px */
+
+
+
+
+
+  --color-primary: #000000;
+  --color-accent: #ff9900;
+  --bg-background: rgba(244, 244, 244, 0.9);
+  --bg-cards: rgba(238, 238, 238, 0.85);
+  --bg-card: rgba(255, 255, 255, 0.95);
+  --bg-primary: #000000;
+  --bg-accent: #ff9900;
+  --text-on-primary: #ffffff;
+  --text-on-light: #000000;
+  --text-on-accent: #000000;
+  --alert-success-bg: #dff0d8;
+  --alert-success-text: #3c763d;
+  --alert-warning-bg: #fcf8e3;
+  --alert-warning-text: #8a6d3b;
+  --alert-error-bg: #f2dede;
+  --alert-error-text: #a94442;
+  --card-shadow: rgba(0, 0, 0, 0.1);
+  --card-border: 1px solid rgba(0, 0, 0, 0.1);
+  --cards-border: 1px solid rgba(0, 0, 0, 0.05);
+  --cards-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  --radius: 0.75rem;
+  --radius-card: 0.75rem;
+  --radius-cards: 1rem;
+
+  --riki-dunkel: #000000;
+  --riki-mittel: #707070;
+  --riki-hell: #c0c0c0;
+
+  --cassiopeia-color-primary: var(--color-primary);
+  --cassiopeia-color-link: #224faa;
+  --link-color: #8f8f8f;
+  --link-color-rgb: 34, 79, 170;
+  --cassiopeia-color-hover: #3a3a3a;
+  --link-hover-color: #898989;
+  --link-hover-color-rgb: 66, 64, 119;
+  --card-bg: #d3d3d3; /* hellgrau */
+  --color-card-bg: #d3d3d3; /* deine Wunschfarbe */
+  --card-color: #be0909; /* Textfarbe auf der Karte */
+
+
+
+
+}
+/* Farben und Variablen */
+/* ====================== Typografie  ====================== */
+body,
+p,
+li {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+h1 {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+h2 {
+  font-size: 1.1rem;
+  margin: 4px;
+  font-weight: 700;
+}
+h3 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+h4 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+h5 {
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 2px;
+  line-height: 1;
+}
+h6 {
+  font-size: 1rem;
+  font-weight: 500;
+   margin: 2px;
+  line-height: 1;
+}
+legend{                                             /* Bespiel beim Kontakt formular Titel */
+  font-size: 1.1rem; 
+  font-weight: 700;
+  margin: 4px;
+}
+dl {
+  margin: 0;
+  padding: 0;
+}
+/* <dt> – Begriff */
+dt {
+  font-weight: bold;
+  margin-bottom: 0.2em;
+  margin-top: 0.1em;                    /* eventuell zu groß? */
+  line-height: 1.2;                     /* Kompakter */
+}
+/* <dd> – Beschreibung */
+dd {
+  margin: 0 0 0 0; /* Standard: Einzug links */
+  line-height: 1.2; /* Kompakter */
+}
+/* Schriftarten und -größen */
+/* =============================    Body Farbe & Grösse ======================= */
+body {                                                                          /* Body für die Slideshow */                
+  background-color: transparent !important;                                     /* Transparent ohne Farbe */    
+  margin: 0;                                                                    /* Kein Abstand um die Seite das die sonst nicht mit Header übereinstimmt*/          
+  padding-left: 5px;                                                            /* Abstand links   damit der text nich aussen klebt */      
+  padding-right: 5px;                                                           /* Abstand rechts  damit der text nich aussen klebt */
+  padding-top: 5px;                                                             /* Abstand oben    damit der text nich aussen klebt */
+  padding-bottom: 5px;                                                          /* Abstand unten grösser  damit der footer platz hat */
+  box-sizing: border-box;    
+}
+/* ========  Kleine Bildschirm keine seitliche Polsterung (ab 1680px) ======== */
+@media (max-width: 1024px) {                                                    /* Ab 1024px und kleiner */
+  body {
+    padding-left: 0px;                                                          /* Body Abstand links   Platz sparen */
+    padding-right: 0px;                                                         /* Body Abstand rechts  Platz sparen */
+  }
+}
+/* ============== Großbildschirm seitliche Polsterung (ab 1680px) =========== */
+@media (min-width: 1680px) {                                                    /* Ab 1680px und größer */                    
+  body {
+    padding-left: 10rem;                                                        /* Abstand links  in rem */
+    padding-right: 10rem;                                                       /* Abstand rechts in rem */
+    padding-top: 5px;                                                           /* Abstand oben */
+    padding-bottom: 5px;                                                        /* Abstand unten */
+  }
+}
+/* Body Einstellungen */
+/* ====================  seitlichen Innenabstand zu entfernen bei fluiden Layout ======================= */
+body.wrapper-fluid header > .grid-child,
+body.wrapper-fluid footer > .grid-child {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+/* ========================    Grid Layout für die Seite ======================= */
+.site-grid {                                                                      /* Hintergrund der grid Abteile */            
+  background-color: #f2f2f2a3;                                                  /* Einheitliches, deckendes Hellgrau */
+    padding: 10px;                                                                /* Innenabstand für die gesamte Seite */  
+    /*background-color: transparent !important;*/                                 /* Transparent ohne Farbe */
+    /*margin: 0cm;*/                                                            /* Kein Abstand ums die Seite das die sonst nicht mit Header übereinstimmt*/                   
+}
+@media (max-width: 1024px) {                                                    /* Ab 1024px und kleiner */
+  .site-grid {                                                                  /* Hintergrund-Grid mit Seitenabstand */
+    padding-left: 0.5rem !important;                                            /* Abstand links  zur Seitenkante etwas kleiner machen*/
+    padding-right: 0.5rem !important;                                           /* Abstand rechts zur Seitenkante etwas kleiner machen*/
+    gap: 0 !important;                                                          /* Moderne Gap-Angabe (zusätzlich zu grid-gap für Kompatibilität) */
+    box-sizing: border-box;                                                     /* Padding wird korrekt zur Gesamtbreite gerechnet */
+  }
+}
+/* Grid Einstellungen */
+.container-component {                                                          /* Hauptinhalt in der Mitte der Seite */                       
+    /*background-color: rgba(45, 45, 45, 0.5) !important;*/
+    background-color: #ffffffd4;                                                  /* Weißer leicht transpartenter Hintergrund für den Hauptblock */
+    padding: 10px;                                                                /* Innenabstand für den Hauptblock nicht zu viel !! */
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);                                   /* Optional: leichter Schatten */
+}
+@media (max-width: 1024px) {                                                    /* Ab 1024px und kleiner */
+  .container-sidebar-left {                                                     /* Sidebar links ausblenden auf Mobilen Geräten */ 
+    display: none;
+  }
+  .container-component {                                                        /* Hauptinhalt innerhalb der Seite */
+    padding-left: 1rem !important;                                              /* Innerer Abstand links */
+    padding-right: 1rem !important;                                             /* Innerer Abstand rechts */
+  }
+}
+/* Container Einstellungen */
+/* ======================== Strukturelle Komponenten (Seitenaufbau) ============================= */
+/* ========================    Header fixieren und kleiner machen ======================= */
+header.header {
+  /* Layout */
+  display: flex;                                                                          /* Flexbox-Layout für horizontale Ausrichtung */
+  flex-direction: row !important;                                                         /* Immer nebeneinander */
+  flex-wrap: nowrap !important;                                                           /* Kein Umbruch – wichtig für mittlere Viewports */
+  justify-content: space-between;                                                         /* Logo links, Menü rechts */
+  align-items: center;                                                                    /* Vertikale Zentrierung */
+  overflow: visible;                                                                      /* !! Ja nicht hidden sonst wird das Menü abgeschnitten */
+
+  /* Abmessungen & Abstand */
+  height: auto;                                                                           /* Höhe passt sich Inhalt an */
+  padding: 0.5rem 1rem;                                                                   /* Luft oben/unten und seitlich */
+  border-radius: var(--header-header-border-radius);                                      /* Abgerundete Ecken in rem oder px */
+
+  /* Positionierung */
+  position: sticky;                                                                       /* Bleibt oben fixiert */
+  top: 0;                                                                                 /* Am oberen Rand */
+  z-index: 1000;                                                                          /* Über anderen Inhalten */
+
+  /* Darstellung */
+  background-color: var(--header-header-background-color);                                /* Hintegrundfarbe fals nicht überdeckt von Bild */
+  background-image: var(--header-header-background-image);                                /* Das Hintergrundbild von Cassiopeia überschreiben oder Leer setzen */
+}
+/* Header Einstellungen */
+header.header .brand-logo img {                                                  /* Logo passend skalieren */    
+  width: var(--brand-logo-img-width);                                            /* Breite automatisch responsiv anpassen in vw */
+  min-width: var(--brand-logo-img-min-width);                                    /* Breite min in px */
+  max-width: var(--brand-logo-img-max-width);                                    /* Breite max in px */ 
+  height: auto;                                                                  /* Höhe immer automatisch proporzional */
+}
+@media (max-width: 1024px) {                                                    /* Ab 1024px und kleiner */
+  header.header .navbar-brand {
+    flex: 1 1 auto !important;                                                  /* Logo nimmt nur so viel Platz ein, wie es braucht */
+    min-width: 80px;                                                            /* Sicherheit: Logo bleibt sichtbar */
+    margin-right:0px important;                                                 /* Kein Abstand rechts – Logo direkt am Rand */
+  }
+}
+/* Logo Einstellungen */
+/* ==========================================
+   CLE.CH – JOOMLA 5 – FINALER MENÜ FIX
+   Standard-Styles für Desktop (>=992px), Ausnahmen für Mobile (<992px>)
+
+}  
+
+/* === NAVBAR-HINTERGRUND: Leicht transparentes Grau für Hauptleiste === */
+.navbar.navbar-expand-lg {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}
+========================================== */
+
+/* === DESKTOP-GRUNDSTYLES (anwenden ab 992px) === */
+/* Flex-Layout und einheitliche Button-/Link-Styles */
+.mod-menu {
+  display: flex !important;
+}
+.mod-menu > li {
+  flex: 1 1 auto !important;
+}
+.mod-menu > li > a,
+.mod-menu > li > button,
+.mod-menu > li > span {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  padding: 0.5rem 1rem; 
+  border-radius: 6px;
+  margin: 0 0.25rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  width: 100% !important;
+  text-align: center;
+  display: block;
+}
+/* Hover-Effekt auf gesamtes Listenelement */
+.mod-menu > li:hover > a,
+.mod-menu > li:hover > button,
+.mod-menu > li:hover > span {
+  background-color: #353535 !important;
+  color: #ffffff !important;
+}
+/* Individueller Hover auf Text-/Button-Level */
+.mod-menu > li > a:hover,
+.mod-menu > li > button:hover,
+.mod-menu > li > span:hover {
+  background-color: #2a2a2a;
+  color: #00e5ff;
+}
+/* Aktiver Menüpunkt */
+.mod-menu > li.active > a {
+  background-color: #00bcd4;
+  color: #000;
+  font-weight: 600;
+}
+/* === SUBMENÜ & MOBILE COLLAPSE (grundlegend) === */
+.metismenu .mm-collapse,
+.mod-menu .nav-child {
+  background-color: #1a1a1a !important;
+  padding: 0.25rem 0;
+  border-radius: 8px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+  min-width: 180px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+$1
+
+/* === Standard Hamburger-/Offcanvas-Styles für Mobile (unter 992px) === */
+@media (max-width: 991px) {
+  /* Hamburger-Button sichtbar */
+  .navbar-toggler {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    z-index: 1000;
+    background-color: #1f1f1f;
+    border: none;
+    padding: 0.75rem;
+    border-radius: 50%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    color: #fff;
+    transition: background-color 0.3s ease;
+    display: block !important;
+  }
+  .navbar-toggler:hover {
+    background-color: #2c2c2c;
+  }
+
+  /* Collapse-Menü sofort dunkel hinterlegen */
+  .navbar-collapse.collapse {
+    background-color: #121212;
+    padding: 1rem;
+  }
+  .navbar-collapse.collapse.show {
+    background-color: #121212;
+  }
+
+  /* Offcanvas-Menü */
+  .offcanvas-collapse {
+    display: block !important;
+    background-color: #121212 !important;
+    color: #f1f1f1;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+    width: 80vw;
+    max-width: 320px;
+    box-shadow: -6px 0 12px rgba(0, 0, 0, 0.5);
+    transition: transform 0.4s ease;
+    transform: translateX(100%);
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    overflow-y: auto;
+    z-index: 999;
+  }
+  .offcanvas-collapse.open {
+    transform: translateX(0);
+  }
+
+  /* Offcanvas Scrollbar */
+  .offcanvas-collapse::-webkit-scrollbar {
+    width: 6px;
+  }
+  .offcanvas-collapse::-webkit-scrollbar-thumb {
+    background-color: #333;
+    border-radius: 3px;
+  }
+  .offcanvas-collapse::-webkit-scrollbar-track {
+    background: transparent;
+  }
+}
+/* === Desktop: Hamburger & Offcanvas ausblenden === */
+@media (min-width: 992px) {
+  .navbar-toggler,
+  .offcanvas-collapse {
+    display: none !important;
+  }
+}
+@media (max-width: 991px) {
+  /* Hamburger-Button sichtbar */
+  .navbar-toggler {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    z-index: 1000;
+    background-color: #1f1f1f;
+    border: none;
+    padding: 0.75rem;
+    border-radius: 50%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    color: #fff;
+    transition: background-color 0.3s ease;
+  }
+  .navbar-toggler:hover {
+    background-color: #2c2c2c;
+  }
+
+  /* Collapse-Menü sofort dunkel hinterlegen */
+  .navbar-collapse.collapse {
+    background-color: #121212;
+    padding: 1rem;
+  }
+  .navbar-collapse.collapse.show {
+    background-color: #121212;
+  }
+
+  /* Offcanvas-Menü */
+  .offcanvas-collapse {
+    display: block;
+    background-color: #121212 !important;
+    color: #f1f1f1;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+    width: 80vw;
+    max-width: 320px;
+    box-shadow: -6px 0 12px rgba(0, 0, 0, 0.5);
+    transition: transform 0.4s ease;
+    transform: translateX(100%);
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    overflow-y: auto;
+    z-index: 999;
+  }
+  .offcanvas-collapse.open {
+    transform: translateX(0);
+  }
+
+  /* Offcanvas Scrollbar */
+  .offcanvas-collapse::-webkit-scrollbar {
+    width: 6px;
+  }
+  .offcanvas-collapse::-webkit-scrollbar-thumb {
+    background-color: #333;
+    border-radius: 3px;
+  }
+  .offcanvas-collapse::-webkit-scrollbar-track {
+    background: transparent;
+  }
+}
+/* === Metismenu Toggler: padding & background sichern === */
+.metismenu.mod-menu .mm-toggler {
+  padding: 0.5rem 1rem !important;
+  background-color: #1a1a1a !important;
+  color: #ffffff !important;
+}
+/* Hover-Effekt für den Metismenu-Toggler */
+.metismenu.mod-menu .mm-toggler:hover {
+  background-color: #2a2a2a !important;
+  color: #ffffff !important;
+}
+/* Menue Einstellungen */
+/* ===========================  Footer Menue im Fussbereich==================== */
+.container-footer {                                                                       /* Container für den Footer fix am unteren Rand*/
+  position: sticky;                                                                       /* Fixiert den Footer am unteren Rand der Seite */
+  bottom: 0;                                                                              /* Positioniert den Footer am unteren Rand */
+  height: 35px;                                                                           /* fixe Höhe der Fusszeile  */ 
+  width: 100%;                                                                            /* Breite des Footers */
+    /* Darstellung */
+  background-color: var(--header-header-background-color);                                /* Hintegrundfarbe fals nicht überdeckt von Bild */
+  background-image: var(--header-header-background-image);                                /* Das Hintergrundbild von Cassiopeia überschreiben oder Leer setzen */
+}
+.container-footer .grid-child {                                                           /* Container für den Footer fix am unteren Rand */
+  height: 35px;                                                                           /* fixe Höhe der Fusszeile  */
+  padding-left: 20px;                                                                     /* Abstand links   damit der text nicht aussen klebt */                 
+  padding-right: 20px;                                                                    /* Abstand rechts  damit der text nicht aussen klebt */
+  padding-top: 0;                                                                         /* Abstand oben    damit sich den fuss verkleinert */
+  padding-bottom: 0;                                                                      /* Abstand unten   damit sich den fuss verkleinert */
+}
+/* Footer Einstellungen */
+/* ======================== Inhaltsbereiche (Content-spezifisch)  =============================== */
+/* ========================    Slideshow Hauptseite (Hintergrund)====================== */
+.background-slideshow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+  pointer-events: none;
+}
+.background-slideshow .slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  animation: fadeSlide 15s infinite;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.background-slideshow .slide:nth-child(1) { animation-delay: 0s; }
+.background-slideshow .slide:nth-child(2) { animation-delay: 5s; }
+.background-slideshow .slide:nth-child(3) { animation-delay: 10s; }
+.background-slideshow .slide-text {
+  font-size: 2rem;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  text-shadow: 0 0 10px #000;
+  opacity: 0;
+  transform: translateY(50px); /* mehr Bewegung nach unten */
+  animation: textSlide 15s infinite ease-in-out;
+  animation-fill-mode: both;
+  transition: opacity 1s ease, transform 1s ease;
+}
+.background-slideshow .slide:nth-child(1) .slide-text { animation-delay: 0s; }
+.background-slideshow .slide:nth-child(2) .slide-text { animation-delay: 5s; }
+.background-slideshow .slide:nth-child(3) .slide-text { animation-delay: 10s; }
+@keyframes fadeSlide {
+  0%, 10%   { opacity: 0; }
+  15%, 45%  { opacity: 1; }
+  50%, 100% { opacity: 0; }
+}
+@keyframes textSlide {
+  0%, 12%   { opacity: 0; transform: translateY(50px); }
+  18%, 42%  { opacity: 1; transform: translateY(0); }
+  48%, 100% { opacity: 0; transform: translateY(50px); }
+}
+/* Slideshow Hintergrund Einstellungen */
+/* ======================   Slideshow (Sidebar / News)  ====================== */
+.slideshow-news {
+  position: relative;
+  width: 100%;
+  max-width: 250px;
+  height: 300px;
+  overflow: hidden;
+}
+.slideshow-news .slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  animation: fade 15s infinite;
+}
+.slideshow-news .slide:nth-child(1) { animation-delay: 0s; }
+.slideshow-news .slide:nth-child(2) { animation-delay: 5s; }
+.slideshow-news .slide:nth-child(3) { animation-delay: 10s; }
+/* ======================   Animation für alle Slides ====================== */
+@keyframes fade {
+  0% { opacity: 0; }
+  10% { opacity: 1; }
+  30% { opacity: 1; }
+  40% { opacity: 0; }
+  100% { opacity: 0; }
+}
+/* Slideshow in der Sidebar: optisch sauber zentriert */
+.slideshow-news {
+  max-width: 250px;
+  margin: 10px ;
+  background: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+/* Slides fließend */
+.slideshow-news .slide {
+  animation: fade 15s infinite;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 250px;
+}
+/* Slideshow News Einstellungen */
+/* ========================    Blog -Liste ======================= */
+/* Gemeinsamer Style für ALLE Blog-Kacheln (leading + normal) */
+.com-content-category-blog__items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem 0;
+}
+.com-content-category-blog__item.blog-item {
+  width: 300px;
+  background-color: #4a4a4a;
+  color: #e4e4e4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 5px;
+  border-radius: 6px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.com-content-category-blog__item.blog-item:hover {
+  transform: translateY(-4px) scale(1.015);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+.com-content-category-blog__item .item-image img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  margin-bottom: 0px;
+  display: block;
+}
+.com-content-category-blog__item .item-content {
+  text-align: center;
+  padding: 0 10px;
+}
+.com-content-category-blog__item h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 6px 0 2px;
+  line-height: 1.0;
+}
+.com-content-category-blog__item p {
+  margin: 2px 0;
+  font-size: 0.95rem;
+  line-height: 1.2;
+  color: #e4e4e4;
+}
+/* ========================    Bilder haten einen kleinen rand oben beim Kategorie blog======================= */
+figure.item-image {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+/* Kategorie Blog Einstellungen */
+/* =================== Kategorie categories__items mit Bild und Text unten ================ */
+.com-content-categories__items {                                                /* Container für Kategorie-Items – 4 Spalten */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+.com-content-categories__item {                                                 /* Einzelnes Kategorie-Item */
+  width: 300px !important;
+  background-color: #4a4a4a !important;
+  color: #e4e4e4 !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 5px;
+}
+.com-content-categories__item img {                                             /* Bildcontainer */
+  width: 300px !important;
+  height: 300px !important;
+  object-fit: cover;
+  display: block;
+  max-width: none !important;
+  max-height: none !important;
+  order: -1;
+  margin-bottom: 6px !important;
+}
+.com-content-categories__item-title-wrapper {                                   /* Wrapper für Titel (falls vorhanden) */                         
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100% !important;
+}
+.com-content-categories__item-title {                                       /* Titel der Kategorie */
+  font-size: 1rem !important;
+  font-weight: 600 !important;
+  color: #ffffff !important;
+  margin: 1px 0 !important;
+  line-height: 1.0 !important;
+}
+/* Beschreibungstext (Introtext o.ä.) */
+.com-content-categories__item p {
+  margin: 2px 0 !important;
+  padding: 0 !important;
+  line-height: 1.1 !important;
+  font-size: 0.95rem;
+}
+/* Sichtbaren Titel über den Link legen */
+.com-content-categories__item {
+  position: relative;
+}
+.box-link {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  display: block;
+  text-decoration: none;
+}
+.com-content-categories__item-title,
+.com-content-categories__item-title a {
+  position: relative;
+  z-index: 2;
+  color: #ffffff !important;
+  text-decoration: none !important;
+  font-size: 1rem !important;
+  font-weight: 600 !important;
+}
+.com-content-categories__item {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border-radius: 6px;
+}
+/* Hover-Effekt */
+.com-content-categories__item:hover {
+  transform: translateY(-4px) scale(1.015);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+/* ========================    Kategorie-Ansicht Anpassungen auf kleineren Breakpoints =========================== */
+@media (max-width: 1200px) {
+  .com-content-categories__items {
+    justify-content: space-around;
+  }
+}
+@media (max-width: 900px) {
+  .com-content-categories__item {
+    width: calc(50% - 0.5rem);                               /* Zwei Kacheln pro Zeile */
+  }
+}
+@media (max-width: 600px) {
+  .com-content-categories__item {
+    width: 100%;                                             /* Eine Kachel pro Zeile */
+  }
+}
+/* Kategorien Einstellungen */
+.com-content-article__body {                                    /* einzelner Joomla Beitrag */                    
+    background-color: rgba(189, 189, 189, 0.863) !important;      /* hellblau Transparent */
+    padding-left: 20px;                                         /* Abstand links   damit der text nicht aussen klebt */                 
+    padding-right: 20px;                                        /* Abstand rechts  damit der text nicht aussen klebt */
+    padding-top: 20px;                                          /* Abstand oben    damit der text nicht aussen klebt */
+    padding-bottom: 20px;                                       /* Abstand unten   damit der text nicht aussen klebt */
+}
+/* ==================  Einzelansicht von einem Beitrag mit Bild rechts und responsive ======================= */
+/* Container für gesamte Artikel in Einzelansicht - Text links, Bild rechts */
+.com-content-article.item-page {
+  display: flex;
+  flex-direction: row; /* Standardanordnung nebeneinander */
+  flex-wrap: nowrap;
+  /* align-items: flex-start; */
+  align-items: stretch; /* 🆕 Bild- und Textspalte gleich hoch */
+  gap: 1rem;
+  background-color: rgba(215, 214, 214, 0.775);
+  border-radius: 0.50rem;
+  padding:0.9rem;
+
+}
+/* Textbereich - rechts mit flex-order */
+.com-content-article.item-page .com-content-article__body {
+  flex: 2;                        /* nimmt etwa 2/3 der Breite ein */
+  order: 2;                       /* Text zuerst, links */
+  padding: 1.5rem;
+  background-color: rgba(189, 189, 189, 0.863);
+  border-radius: 0.50rem;
+}
+/* Hover-Effekt */
+.com-content-article.item-page figure.item-image:hover img {
+  transform: scale(1.1);
+}
+/* ======================= Hover-Effekt mit Texthinweis beim Bild ======================= */
+/* Der Hinweistext „Klicken zum Vergrößern“ erscheint beim Überfahren des Bildes */
+.com-content-article.item-page figure.item-image::after {
+  content: "Klicken zum Vergrößern";           /* Der sichtbare Hinweistext */
+  position: absolute;                          /* Absolute Positionierung im Bild-Container */
+  bottom: 8px;                                 /* Abstand vom unteren Rand */
+  left: 8px;                                   /* Abstand vom linken Rand */
+  background-color: rgba(0, 0, 0, 0.6);        /* Dunkler halbtransparenter Hintergrund */
+  color: white;                                /* Weiße Textfarbe für Kontrast */
+  padding: 4px 8px;                            /* Innenabstand (etwas Luft um den Text) */
+  font-size: 0.85rem;                          /* Etwas kleinere Schriftgröße */
+  border-radius: 4px;                          /* Abgerundete Ecken */
+  opacity: 0;                                  /* Unsichtbar im Normalzustand */
+  transition: opacity 0.3s ease;              /* Weiche Überblendung beim Einblenden */
+  pointer-events: none;                        /* Klicks gehen weiter aufs Bild (wichtig!) */
+}
+/* Beim Hover über das Bild wird der Hinweis eingeblendet */
+.com-content-article.item-page figure.item-image:hover::after {
+  opacity: 1;                                  /* Sichtbar beim Hover */
+}
+/* =================== Artikelansicht: Textbereich =================== */
+.com-content-article.item-page .com-content-article__body {
+  order: unset;                                                                 /* Keine erzwungene Reihenfolge */
+  width: 100%;                                                                  /* Volle Breite */
+}
+.com-content-article.item-page figure.item-image {
+  order: unset;                                                               /* Keine erzwungene Reihenfolge */
+  width: 100% !important;
+  position: relative;                                     /* Stelle sicher, dass der Bild-Container relativ positioniert ist,    damit wir den Text absolut im Verhältnis dazu positionieren können */
+  flex: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 300px;
+  margin: 0 auto;                                                               /* zentriert das Bild */
+  border-radius: 0.5rem;
+}
+.com-content-article.item-page figure.item-image img {
+  width: 100% ;                                                                 /* Volle Breite */
+  height: auto ;                                                                /* Höhe proportional */
+  max-height: 40vh;                                                             /* Maximale Höhe: 40 % des sichtbaren Browserfensters */
+  display: block;
+  object-fit: cover;                                                            /* Ganze Bildfläche wird gezeigt, mit evtl. Rand */
+  border-radius: 0.5rem;                                                        /* Abgerundete Ecken für modernes Design */
+  transition: transform 0.3s ease-in-out;                                       /* Animation für Zoom-Effekt */
+  cursor: zoom-in;                                                              /* Mauszeiger wird zur Lupe – Hinweis auf Interaktivität */
+}
+@media (max-width: 768px) {
+  .com-content-article.item-page {
+    flex-direction: column;
+  }
+
+  .com-content-article.item-page figure.item-image,
+  .com-content-article.item-page .com-content-article__body {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+/* Beiträge Artikel Einstellungen */
+/* **** Artikel-Übersicht – MODULE bsp. Beiträge aus der gleichen Kategorie **** */
+/* =================== Artikelkarte (Modul) =================== */
+.mod-articles-item {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 100%;
+  max-width: 300px;
+  margin: 0.75rem;
+  background-color: #444;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+}
+/* =================== Container für Bild + Text =================== */
+.mod-articles-item .mod-articles-item-content {
+  display: flex;
+  flex-direction: column;
+  background-color: #4a4a4a;
+  border-radius: 0 0 0.5rem 0.5rem;
+  height: 100%;
+}
+/* =================== Bildcontainer (innerhalb content!) =================== */
+.mod-articles-item .mod-articles-item-content .mod-articles-image {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  position: relative;
+  background-color: transparent;
+  overflow: hidden;
+  flex: 0 0 auto;
+}
+/* =================== Bild selbst =================== */
+.mod-articles-item .mod-articles-item-content .mod-articles-image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  transition: transform 0.3s ease-in-out;
+}
+/* =================== Hover-Effekt fürs Bild =================== */
+.mod-articles-item .mod-articles-item-content .mod-articles-image:hover img {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+/* =================== Textbereich =================== */
+.mod-articles-item .mod-articles-item-content p {
+  color: #fff;
+  text-align: center;
+  font-size: 0.9rem;
+  line-height: 1.3;
+  margin: 0;
+  padding: 0.5rem;
+  min-height: 1.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  flex-wrap: wrap;
+}
+/* =================== Sichtbarer Platzhalter bei leerem Text =================== */
+.mod-articles-item .mod-articles-item-content p:empty::before,
+.mod-articles-item p:empty::before {
+  content: "\00a0";
+  display: block;
+  height: 1.3rem;
+}
+/* =================== Optional: Titeltext =================== */
+.mod-articles-item .item-title {
+  margin: 0.2rem 0;
+  font-weight: bold;
+  font-size: 0.95rem;
+}
+/* =================== Optional: Beschreibungstext =================== */
+.mod-articles-item .item-introtext {
+  margin: 0;
+  font-size: 0.85rem;
+}
+/* Module Artikel Einstellungen */
+/* =============================    Kontaktformular ========================== */
+.com-contact__container {                                                       /* Hintergrund und Padding für das gesamte Kontaktformular */    
+    background-color: rgba(242, 242, 242, 0.95);                              /* Fast deckend, leicht grau */
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 0px;                                                          /* Abstand oben    damit der text nicht aussen klebt */
+    padding-bottom: 0px;                                                       /* Abstand unten   damit der text nicht aussen klebt */
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);                                /* Optional: weicher Schatten */
+}
+.com-contact__info {                                                          /* Hintergrund und Padding für eigene Adresse  auf Kontaktformular */
+    background-color: rgba(242, 242, 242, 0.9);                             /* Hellgrau, wenig Transparenz */
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 0px;                                                          /* Abstand oben    damit der text nicht aussen klebt */
+    padding-bottom: 0px;                                                /* Innenabstand */     
+    border-radius: 8px;                                          /* Optionale abgerundete Ecken für modernes Aussehen */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);                  /* Optional: dezenter Schatten */
+}
+.com-contact__form.contact-form {                               /* Kontaktformular mit den Feldern zum senden*/
+    background-color: #f2f2f2;                                /* Hellgrauer Hintergrund */
+    padding: 20px;                                              /* Innenabstand */
+    border-radius: 8px;                                         /* Optionale abgerundete Ecken für modernes Aussehen */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);                 /* Optional: leichte Schatten für Tiefe */
+}
+.control-group{
+  margin-top: 6px;                                       /* Abstand zwischen den Formularfeldern */
+  margin-bottom: 6px;                                       /* Abstand zwischen den Formularfeldern */
+}
+/* Kontakt-Formular Einstellungen */
+/* ========================    Bilder POP up ======================= */
+/* Popup-Stil */
+.popup-overlay {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  top: 5vh;
+  left: 5vw;
+  right: 5vw;
+  bottom: 5vh;
+  background: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+}
+.popup-inner {
+  position: relative;
+  max-width: 100%;
+  max-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.popup-inner img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  border-radius: 5px;
+  box-shadow: 0 0 20px white;
+}
+.popup-close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 56px;
+  height: 56px;
+  font-family: Arial, sans-serif; /* oder: system-ui */
+  color: red;
+  font-size: 38px;
+  font-weight: bold; /* fett! */
+
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
+  touch-action: manipulation;
+  line-height: 0.8; /* 👈 wichtig! */
+}
+/* Galerie Einstellungen */
+/* ======================== Seiten-spezifisch (spezielle Fälle, zuletzt)  ======================= */
+/* ================    Startseite von Haupmenu nur ausblenden wenn nicht edit Mode ==================== */
+body.itemid-101:not(.layout-edit) .container-component {                                                 /* Nur im Edit Mode anzeigen */
+      display: none !important;                                                           /* Ausblenden der Komponenten */
+  }
+/* ========================   Siedbar Links überarbeiten ======================= */
+body.itemid-101 .mod-articles-item {
+
+  background-color: #fcfbfb4f !important;
+  padding: 3rem !important;
+  border: 1px solid #8d8d8d5c !important; /* hellgrau */
+  border-radius: 0.3rem !important;
+}
+/* Nur auf der Startseite (itemid-101) */
+body.itemid-101 .site-grid {
+  background-color: transparent !important;
+  box-shadow: none !important;
+  padding: 0.5rem !important;
+}
+/* Sidebar links entschärfen */
+body.itemid-101 .container-sidebar-left {
+  background: transparent !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+}
+/* Sidebar-Box Neuheiten: ruhiger und rahmenlos */
+body.itemid-101 .sidebar-left.card {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+}
+/* Titel "Neuheiten" ausblenden (optional) */
+body.itemid-101 .sidebar-left .card-header {
+  display: none;
+}
+/* Inhalt (Text + Bild) optisch freistellen */
+body.itemid-101 .sidebar-left .card-body {
+  padding: 0;
+  background: transparent;
+  border: none;
+  text-align: center;
+}
+/* Als Letztes die Startseite, damit es nicht übersteuert wird */
+/* ========================    Card Hintergrundfarbe ======================= */
+.card-body {
+    background-color: #eaeaea76 !important;                                   /* Hintergrundfarbe beim Hover-Effekt */  
+}
+.card-header {
+    background-color: #bbbbbb9f !important;                                   /* Hintergrundfarbe beim Hover-Effekt */  
+}
+.bottom-b.card  {
+    background-color: #ffffff56 !important;                                   /* Hintergrundfarbe beim Hover-Effekt */  
+}
+figure {
+  margin: 0;
+  padding: 0;
+  /* outline: 1px solid red; */  /* zum Testen */
+}
+/* ========================    Bilder in Beiträgen ohne Rand Beispiel auch für logo im kopf ======================= */
+img {
+  border: none;
+  margin: 0;
+  padding: 0;
+  display: block;
+}

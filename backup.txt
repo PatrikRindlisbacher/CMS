@@ -1,0 +1,281 @@
+/* ===================================== Beitrag Gesamt-Card =================== */
+.mod-articles-item {
+  width: 300px !important;
+  background-color: #4a4a4a !important;
+  color: #e4e4e4 !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 5px;
+}
+
+.mod-articles-item .mod-articles-item-content {                               /* === Inhalt der Karte (alles untereinander) === */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100% !important;
+}
+
+
+.mod-articles-item .mod-articles-image {                                  /* === Bild-Container mit fixer Größe === */              
+  width: 300px !important;
+  height: 300px !important;
+  margin-bottom: 6px !important;                                          /* === Optional: Weniger Abstand zwischen Bild und Text === */
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  order: -1;
+  flex-shrink: 0;
+}
+
+
+.mod-articles-item .mod-articles-image img {                            /* === Bild selbst: kein max-width/height vom Template übernehmen === */
+  width: 300px !important;
+  height: 300px !important;
+  object-fit: cover;
+  display: block;
+  max-width: none !important;
+  max-height: none !important;
+}
+
+
+.mod-articles-item .item-title {                                    /* === Titel des Beitrags unter dem Bild === */                   
+  order: 2;
+  margin: 0.5em 0 0.2em;
+}
+
+
+.mod-articles-item .item-introtext {                                      /* === Einleitungstext unter dem Titel === */
+  order: 3;
+  margin: 0;
+}
+
+
+.mod-articles-item .mod-articles-link  {                                  /* === Einleitungstext unter dem Titel === */
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #ffffff;
+  
+}
+
+/* === Kompakter Titel unter dem Bild === */
+.mod-articles-title {
+  margin: 1px 0 !important;     /* Weniger vertikaler Abstand */
+  font-size: 1rem !important;   /* Kleinerer Titel */
+  line-height: 1.0 !important;  /* Engere Zeilenhöhe */
+}
+
+/* Optional: Der Link im Titel */
+.mod-articles-link {
+  font-size: 1rem !important;
+  font-weight: 600 !important;
+  color: #ffffff !important;
+  text-decoration: none;
+}
+
+/* === Kompakterer Text unter dem Bild (z. B. Beschreibung) === */
+.mod-articles-item .mod-articles-item-content p {
+  margin: 2px 0 !important;     /* Weniger vertikaler Abstand */
+  padding: 0 !important;
+  line-height: 1.1 !important;  /* Engere Zeilenhöhe */
+  font-size: 0.95rem;           /* Optional: leicht kleiner */
+}
+
+
+
+
+------------------
+
+
+/* **** Artikel-Übersicht – MODULE bsp. Beiträge aus der gleichen Kategorie **** */
+/* =================== Modul-Karte: gesamter Beitrag =================== */
+.mod-articles-item {
+  display: flex;                               /* Flexbox-Layout für vertikale Anordnung */
+  flex-direction: column;                      /* Bild oben, Text unten */
+  align-items: stretch;                        /* Bild und Text gleich breit */
+  width: 100%;
+  max-width: 300px;                            /* Kartenbreite */
+  margin: 0.75rem;                             /* Abstand zur nächsten Karte */
+  background-color: #444;                      /* Hintergrundfarbe */
+  border-radius: 0.5rem;                         /* Ecken abgerundet */
+  overflow: hidden;                            /* kein Überlauf */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.25);       /* Schatten */
+}
+
+/* =================== Modul-Karte: Bildcontainer =================== */
+.mod-articles-item .mod-articles-image {
+  width: 100%;
+  aspect-ratio: 1 / 1;                         /* quadratische Fläche */
+  overflow: hidden;
+  border-radius: 0.5rem 0.5rem 0 0;                /* Obere Ecken rund */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+}
+
+.mod-articles-item .mod-articles-image {
+  width: 100%;
+  aspect-ratio: 1 / 1;                            /* Einheitliches Seitenverhältnis */
+  overflow: hidden;
+  border-radius: 0.5rem 0.5rem 0 0;               /* ✅ nur obere Ecken abrunden */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;                         /* falls Bild langsam lädt */
+}
+
+
+/* =================== Modul-Karte: Bild =================== */
+.mod-articles-item .mod-articles-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  transition: transform 0.3s ease-in-out;  /* ✅ sanfte Zoom-Animation beim Hover */
+}
+
+
+
+/* =================== Hover-Effekt =================== */
+.mod-articles-item .mod-articles-image:hover img {
+  transform: scale(1.05);                      /* leichtes Zoomen beim Hover */
+  cursor: pointer;
+}
+
+/* =================== Modul-Karte: Textbereich =================== */
+.mod-articles-item .mod-articles-item-content {
+  padding: 0.0rem;
+  background-color: #4a4a4a;
+  color: #fff;
+  text-align: center;
+  font-size: 0.9rem;
+  line-height: 1.3;
+  border-radius: 0 0 0.5rem 0.5rem;                /* Untere Ecken rund */
+}
+
+/* =================== Titeltext =================== */
+.mod-articles-item .item-title {
+  margin: 0.2rem 0;
+  font-weight: bold;
+  font-size: 0.95rem;
+}
+
+/* =================== Untertitel / Beschreibung =================== */
+.mod-articles-item .item-introtext {
+  margin: 0;
+  font-size: 0.85rem;
+}
+
+
+
+
+
+
+
+
+------------------------------------------------------------------------
+
+
+/* **** Artikel-Übersicht – MODULE bsp. Beiträge aus der gleichen Kategorie **** */
+/* **** Artikel-Übersicht – MODULE bsp. Beiträge aus der gleichen Kategorie **** */
+/* =================== Artikelkarte (Modul) =================== */
+.mod-articles-item {
+  display: flex;                          /* Flexbox-Layout für flexible Höhen */
+  flex-direction: column;                /* Inhalt vertikal stapeln */
+  align-items: stretch;                  /* Volle Breite für Kind-Elemente */
+  width: 100%;                           /* Karte nutzt 100 % vom Grid-Feld */
+  max-width: 300px;                      /* Optionale Begrenzung der Kartenbreite */
+  margin: 0.75rem;                       /* Abstand zwischen den Karten */
+  background-color: #444;                /* Hintergrundfarbe der Karte */
+  border-radius: 0.5rem;                 /* Abgerundete Ecken */
+  overflow: hidden;                      /* Keine überstehenden Inhalte */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25); /* Leichter Schatten */
+  /* height: 100%;                          Karte kann sich dehnen */
+}
+
+/* =================== Container für Bild + Text =================== */
+.mod-articles-item .mod-articles-item-content {
+  display: flex;                         /* Flex-Container */
+  flex-direction: column;               /* Vertikal stapeln: Bild, dann Text */
+  background-color: #4a4a4a;            /* Grauer Hintergrund für den gesamten Block */
+  border-radius: 0 0 0.5rem 0.5rem;     /* Untere Ecken abgerundet */
+  height: 100%;                         /* Deckt gesamte Karte ab */
+}
+
+/* =================== Bildcontainer (innerhalb content!) =================== */
+.mod-articles-item .mod-articles-item-content .mod-articles-image {
+  width: 100%;                           /* Bildcontainer nimmt volle Breite ein */
+  aspect-ratio: 1 / 1;                   /* Quadrat */
+  overflow: hidden;                      /* Keine Überläufe */
+  display: flex;                         /* Für zentriertes Bild */
+  justify-content: center;              /* Zentriert horizontal */
+  align-items: center;                  /* Zentriert vertikal */
+  background-color: #000;               /* Schwarzer Hintergrund */
+  flex-shrink: 0;                        /* Bildgröße bleibt fix */
+}
+
+/* =================== Bild selbst =================== */
+.mod-articles-item .mod-articles-item-content .mod-articles-image img {
+  width: 100%;                           /* Skaliert auf volle Breite */
+  height: 100%;                          /* Skaliert auf volle Höhe */
+  object-fit: cover;                    /* Zuschneiden auf Quadrat */
+  object-position: center;              /* Zentriert anzeigen */
+  display: block;                       /* Kein Leerraum unter Bild */
+  transition: transform 0.3s ease-in-out; /* Weicher Zoom-Effekt */
+}
+
+/* =================== Hover-Effekt fürs Bild =================== */
+.mod-articles-item .mod-articles-item-content .mod-articles-image:hover img {
+  transform: scale(1.05);               /* Zoom beim Überfahren */
+  cursor: pointer;                      /* Cursor wird zur Hand */
+}
+
+/* =================== Textbereich =================== */
+.mod-articles-item .mod-articles-item-content p {
+  color: #fff;                          /* Weißer Text */
+  text-align: center;                  /* Zentriert */
+  font-size: 0.9rem;                   /* Schriftgröße */
+  line-height: 1.3;                    /* Zeilenhöhe */
+  margin: 0;                           /* Kein Außenabstand */
+  padding: 0.5rem;                     /* Innenabstand */
+  min-height: 1.3rem;                  /* Mindestens eine Zeile */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-grow: 1;
+  flex-wrap: wrap;                     /* Falls nötig umbrechen */
+}
+
+/* =================== Sichtbarer Platzhalter bei leerem Text =================== */
+.mod-articles-item .mod-articles-item-content p:empty::before {
+  content: "\00a0";                    /* Geschütztes Leerzeichen */
+  display: block;                      /* Sichtbar machen */
+  height: 1.3rem;                      /* Zeilenhöhe */
+}
+
+.mod-articles-item p:empty::before {
+  content: "\00a0";
+  display: block;
+  height: 1.3rem;
+}
+
+/* =================== Optional: Titeltext =================== */
+.mod-articles-item .item-title {
+  margin: 0.2rem 0;                    /* Abstand oben/unten */
+  font-weight: bold;                   /* Fettschrift */
+  font-size: 0.95rem;                  /* Etwas größere Schrift */
+}
+
+/* =================== Optional: Beschreibungstext =================== */
+.mod-articles-item .item-introtext {
+  margin: 0;                           /* Kein Außenabstand */
+  font-size: 0.85rem;                  /* Etwas kleinere Schrift */
+}
+
+
+

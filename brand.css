@@ -1,0 +1,16 @@
+header.header .brand-logo img {                                                  /* Logo passend skalieren */    
+  width: var(--brand-logo-img-width);                                            /* Breite automatisch responsiv anpassen in vw */
+  min-width: var(--brand-logo-img-min-width);                                    /* Breite min in px */
+  max-width: var(--brand-logo-img-max-width);                                    /* Breite max in px */ 
+  height: auto;                                                                  /* Höhe immer automatisch proporzional */
+}
+
+@media (max-width: 1024px) {                                                    /* Ab 1024px und kleiner */
+  header.header .navbar-brand {
+    flex: 1 1 auto !important;                                                  /* Logo nimmt nur so viel Platz ein, wie es braucht */
+    min-width: 80px;                                                            /* Sicherheit: Logo bleibt sichtbar */
+    margin-right:0px important;                                                 /* Kein Abstand rechts – Logo direkt am Rand */
+  }
+}
+
+

@@ -1,0 +1,27 @@
+
+
+/* ====================  seitlichen Innenabstand zu entfernen bei fluiden Layout ======================= */
+body.wrapper-fluid header > .grid-child,
+body.wrapper-fluid footer > .grid-child {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+
+/* ========================    Grid Layout für die Seite ======================= */
+.site-grid {                                                                      /* Hintergrund der grid Abteile */            
+  background-color: #f2f2f2a3;                                                  /* Einheitliches, deckendes Hellgrau */
+    padding: 10px;                                                                /* Innenabstand für die gesamte Seite */  
+    /*background-color: transparent !important;*/                                 /* Transparent ohne Farbe */
+    /*margin: 0cm;*/                                                            /* Kein Abstand ums die Seite das die sonst nicht mit Header übereinstimmt*/                   
+}
+
+
+@media (max-width: 1024px) {                                                    /* Ab 1024px und kleiner */
+  .site-grid {                                                                  /* Hintergrund-Grid mit Seitenabstand */
+    padding-left: 0.5rem !important;                                            /* Abstand links  zur Seitenkante etwas kleiner machen*/
+    padding-right: 0.5rem !important;                                           /* Abstand rechts zur Seitenkante etwas kleiner machen*/
+    gap: 0 !important;                                                          /* Moderne Gap-Angabe (zusätzlich zu grid-gap für Kompatibilität) */
+    box-sizing: border-box;                                                     /* Padding wird korrekt zur Gesamtbreite gerechnet */
+  }
+}

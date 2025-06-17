@@ -1,0 +1,34 @@
+
+
+/* =============================    Kontaktformular ========================== */
+.com-contact__container {                                                       /* Hintergrund und Padding für das gesamte Kontaktformular */    
+    background-color: rgba(242, 242, 242, 0.95);                              /* Fast deckend, leicht grau */
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 0px;                                                          /* Abstand oben    damit der text nicht aussen klebt */
+    padding-bottom: 0px;                                                       /* Abstand unten   damit der text nicht aussen klebt */
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);                                /* Optional: weicher Schatten */
+}
+
+.com-contact__info {                                                          /* Hintergrund und Padding für eigene Adresse  auf Kontaktformular */
+    background-color: rgba(242, 242, 242, 0.9);                             /* Hellgrau, wenig Transparenz */
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 0px;                                                          /* Abstand oben    damit der text nicht aussen klebt */
+    padding-bottom: 0px;                                                /* Innenabstand */     
+    border-radius: 8px;                                          /* Optionale abgerundete Ecken für modernes Aussehen */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);                  /* Optional: dezenter Schatten */
+}
+
+.com-contact__form.contact-form {                               /* Kontaktformular mit den Feldern zum senden*/
+    background-color: #f2f2f2;                                /* Hellgrauer Hintergrund */
+    padding: 20px;                                              /* Innenabstand */
+    border-radius: 8px;                                         /* Optionale abgerundete Ecken für modernes Aussehen */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);                 /* Optional: leichte Schatten für Tiefe */
+}
+
+.control-group{
+  margin-top: 6px;                                       /* Abstand zwischen den Formularfeldern */
+  margin-bottom: 6px;                                       /* Abstand zwischen den Formularfeldern */
+}

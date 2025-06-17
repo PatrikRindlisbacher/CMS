@@ -1,0 +1,28 @@
+/* =============================    Body Farbe & Grösse ======================= */
+body {                                                                          /* Body für die Slideshow */                
+  background-color: transparent !important;                                     /* Transparent ohne Farbe */    
+  margin: 0;                                                                    /* Kein Abstand um die Seite das die sonst nicht mit Header übereinstimmt*/          
+  padding-left: 5px;                                                            /* Abstand links   damit der text nich aussen klebt */      
+  padding-right: 5px;                                                           /* Abstand rechts  damit der text nich aussen klebt */
+  padding-top: 5px;                                                             /* Abstand oben    damit der text nich aussen klebt */
+  padding-bottom: 5px;                                                          /* Abstand unten grösser  damit der footer platz hat */
+  box-sizing: border-box;    
+}
+
+/* ========  Kleine Bildschirm keine seitliche Polsterung (ab 1680px) ======== */
+@media (max-width: 1024px) {                                                    /* Ab 1024px und kleiner */
+  body {
+    padding-left: 0px;                                                          /* Body Abstand links   Platz sparen */
+    padding-right: 0px;                                                         /* Body Abstand rechts  Platz sparen */
+  }
+}
+
+/* ============== Großbildschirm seitliche Polsterung (ab 1680px) =========== */
+@media (min-width: 1680px) {                                                    /* Ab 1680px und größer */                    
+  body {
+    padding-left: 10rem;                                                        /* Abstand links  in rem */
+    padding-right: 10rem;                                                       /* Abstand rechts in rem */
+    padding-top: 5px;                                                           /* Abstand oben */
+    padding-bottom: 5px;                                                        /* Abstand unten */
+  }
+}

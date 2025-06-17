@@ -1,0 +1,221 @@
+/* ==========================================
+   CLE.CH – JOOMLA 5 – FINALER MENÜ FIX
+   Standard-Styles für Desktop (>=992px), Ausnahmen für Mobile (<992px>)
+
+}  
+
+/* === NAVBAR-HINTERGRUND: Leicht transparentes Grau für Hauptleiste === */
+.navbar.navbar-expand-lg {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}
+   ========================================== */
+
+/* === DESKTOP-GRUNDSTYLES (anwenden ab 992px) === */
+/* Flex-Layout und einheitliche Button-/Link-Styles */
+.mod-menu {
+  display: flex !important;
+}
+.mod-menu > li {
+  flex: 1 1 auto !important;
+}
+.mod-menu > li > a,
+.mod-menu > li > button,
+.mod-menu > li > span {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  padding: 0.5rem 1rem; 
+  border-radius: 6px;
+  margin: 0 0.25rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  width: 100% !important;
+  text-align: center;
+  display: block;
+}
+
+/* Hover-Effekt auf gesamtes Listenelement */
+.mod-menu > li:hover > a,
+.mod-menu > li:hover > button,
+.mod-menu > li:hover > span {
+  background-color: #353535 !important;
+  color: #ffffff !important;
+}
+
+/* Individueller Hover auf Text-/Button-Level */
+.mod-menu > li > a:hover,
+.mod-menu > li > button:hover,
+.mod-menu > li > span:hover {
+  background-color: #2a2a2a;
+  color: #00e5ff;
+}
+
+/* Aktiver Menüpunkt */
+.mod-menu > li.active > a {
+  background-color: #00bcd4;
+  color: #000;
+  font-weight: 600;
+}
+
+/* === SUBMENÜ & MOBILE COLLAPSE (grundlegend) === */
+.metismenu .mm-collapse,
+.mod-menu .nav-child {
+  background-color: #1a1a1a !important;
+  padding: 0.25rem 0;
+  border-radius: 8px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+  min-width: 180px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+$1
+
+/* === Standard Hamburger-/Offcanvas-Styles für Mobile (unter 992px) === */
+@media (max-width: 991px) {
+  /* Hamburger-Button sichtbar */
+  .navbar-toggler {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    z-index: 1000;
+    background-color: #1f1f1f;
+    border: none;
+    padding: 0.75rem;
+    border-radius: 50%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    color: #fff;
+    transition: background-color 0.3s ease;
+    display: block !important;
+  }
+  .navbar-toggler:hover {
+    background-color: #2c2c2c;
+  }
+
+  /* Collapse-Menü sofort dunkel hinterlegen */
+  .navbar-collapse.collapse {
+    background-color: #121212;
+    padding: 1rem;
+  }
+  .navbar-collapse.collapse.show {
+    background-color: #121212;
+  }
+
+  /* Offcanvas-Menü */
+  .offcanvas-collapse {
+    display: block !important;
+    background-color: #121212 !important;
+    color: #f1f1f1;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+    width: 80vw;
+    max-width: 320px;
+    box-shadow: -6px 0 12px rgba(0, 0, 0, 0.5);
+    transition: transform 0.4s ease;
+    transform: translateX(100%);
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    overflow-y: auto;
+    z-index: 999;
+  }
+  .offcanvas-collapse.open {
+    transform: translateX(0);
+  }
+
+  /* Offcanvas Scrollbar */
+  .offcanvas-collapse::-webkit-scrollbar {
+    width: 6px;
+  }
+  .offcanvas-collapse::-webkit-scrollbar-thumb {
+    background-color: #333;
+    border-radius: 3px;
+  }
+  .offcanvas-collapse::-webkit-scrollbar-track {
+    background: transparent;
+  }
+}
+
+/* === Desktop: Hamburger & Offcanvas ausblenden === */
+@media (min-width: 992px) {
+  .navbar-toggler,
+  .offcanvas-collapse {
+    display: none !important;
+  }
+}@media (max-width: 991px) {
+  /* Hamburger-Button sichtbar */
+  .navbar-toggler {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    z-index: 1000;
+    background-color: #1f1f1f;
+    border: none;
+    padding: 0.75rem;
+    border-radius: 50%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    color: #fff;
+    transition: background-color 0.3s ease;
+  }
+  .navbar-toggler:hover {
+    background-color: #2c2c2c;
+  }
+
+  /* Collapse-Menü sofort dunkel hinterlegen */
+  .navbar-collapse.collapse {
+    background-color: #121212;
+    padding: 1rem;
+  }
+  .navbar-collapse.collapse.show {
+    background-color: #121212;
+  }
+
+  /* Offcanvas-Menü */
+  .offcanvas-collapse {
+    display: block;
+    background-color: #121212 !important;
+    color: #f1f1f1;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+    width: 80vw;
+    max-width: 320px;
+    box-shadow: -6px 0 12px rgba(0, 0, 0, 0.5);
+    transition: transform 0.4s ease;
+    transform: translateX(100%);
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    overflow-y: auto;
+    z-index: 999;
+  }
+  .offcanvas-collapse.open {
+    transform: translateX(0);
+  }
+
+  /* Offcanvas Scrollbar */
+  .offcanvas-collapse::-webkit-scrollbar {
+    width: 6px;
+  }
+  .offcanvas-collapse::-webkit-scrollbar-thumb {
+    background-color: #333;
+    border-radius: 3px;
+  }
+  .offcanvas-collapse::-webkit-scrollbar-track {
+    background: transparent;
+  }
+}
+
+
+
+/* === Metismenu Toggler: padding & background sichern === */
+.metismenu.mod-menu .mm-toggler {
+  padding: 0.5rem 1rem !important;
+  background-color: #1a1a1a !important;
+  color: #ffffff !important;
+}
+
+/* Hover-Effekt für den Metismenu-Toggler */
+.metismenu.mod-menu .mm-toggler:hover {
+  background-color: #2a2a2a !important;
+  color: #ffffff !important;
+}
+
+
