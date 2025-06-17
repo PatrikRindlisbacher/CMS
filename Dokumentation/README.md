@@ -8,5 +8,13 @@
 5. Child Template erstellen -> Keine unnötigen Overrides unabsichtlich erstellen !!!
 6. Logo im Child Template hinterlegen
 7. Kontakt erstellen für Kontaktormular
+   Schlagwort erstellen --> für Kategorie Blog 
 8. Menü erste Uberschriften erstellen
 
+
+
+user.scc kopieren
+user.js  kopieren
+Main Menü fertig anpassen 
+
+Startseite Dummy
