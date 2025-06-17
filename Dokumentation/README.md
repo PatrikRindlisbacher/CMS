@@ -19,7 +19,11 @@ Default setzen für Beiträge --> Bild noch erstellen
 
 - Kontakt erstellen für Kontaktormular
 
+- Kategorien eröffnen wo Nötig Unterkategorien Bsp. Maschinen Park --> Maschinen
+
 - Schlagwort erstellen --> für Kategorie Blog 
+
+- Beitrag erstellen mit Kategorie 
 
 - Menü erste Uberschriften erstellen
 
