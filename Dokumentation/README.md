@@ -25,7 +25,7 @@ Default setzen für Beiträge --> Bild noch erstellen
 
 
 user.scc kopieren
-
+- [Zur Dokumentation JS ](../JavaScript/README.md)
 user.js  kopieren
 
 
