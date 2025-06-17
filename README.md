@@ -14,9 +14,9 @@ Installation:
 - chmod +x ./node_modules/.bin/postcss
 
 Benutzung:
-starten&nbsp;    npx postcss src/css/main.css -o dist/main.css
+starten -->    npx postcss src/css/main.css -o dist/main.css
 
-Ergebnis&nbsp;   im DIST Ordner ist die fertige USER.CSS
+Ergebnis -->   im DIST Ordner ist die fertige USER.CSS
 
 Verwenden:  
 user.css manuell oder per FTP Kopieren in Webspace 
