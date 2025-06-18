@@ -2,6 +2,10 @@
 
 - Favicon und Bilder und Logos hochladen
 
+- Suchmaschinen-freundliche URL JA = https://www.deine-seite.ch/produkte/kategorie/produktname .htaccess
+
+- URL-Rewrite nutzen  Diese Option entfernt das index.php aus der URL. muss mod_rewrite (Apache) 
+
 - Inhalt -> Beiträge -> Optionen -> Bearneitungslayout ->  Bilder und Links im Frontend --> Anzeigen
 
 - Inhalt -> Beiträge -> Optionen -> Beiträge -> Position der Beitragsinfo -> darunter (HTML Ausgabe)
