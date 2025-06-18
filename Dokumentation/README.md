@@ -2,7 +2,15 @@
 
 - Favicon und Bilder und Logos hochladen
 
-- Suchmaschinen-freundliche URL JA = https://www.deine-seite.ch/produkte/kategorie/produktname .htaccess
+- Suchmaschinen-freundliche URL JA = https://www.deine-seite.ch/produkte/kategorie/produktname .htaccess  
+   Weitere Einstellungen sind im Plugin „System – SEF“ zu finden.  
+   Website-Domain =  
+   Dateiendung durch Weiterleitung erzwingen =  
+   Strenge Handhabung von index.php =    
+   Nachgestellter Schrägstrich für URLs =    
+   Strikte Weiterleitung =  
+
+
 
 - URL-Rewrite nutzen  Diese Option entfernt das index.php aus der URL. muss mod_rewrite (Apache) 
 
