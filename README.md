@@ -20,4 +20,4 @@ starten -->    npx postcss src/css/main.css -o dist/main.css
 Ergebnis -->   im DIST Ordner ist die fertige USER.CSS
 
 Verwenden:  
-user.css manuell oder per FTP Kopieren in Webspace 
+user.css manuell oder per FTP Kopieren in Webspace
