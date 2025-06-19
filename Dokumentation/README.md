@@ -13,6 +13,7 @@
 
 
 - URL-Rewrite nutzen  Diese Option entfernt das index.php aus der URL. muss mod_rewrite (Apache) 
+  Dieser Punkt muss noch gut Dokuemtiert werden !!!!
 
 - Inhalt -> Beiträge -> Optionen -> Bearneitungslayout ->  Bilder und Links im Frontend --> Anzeigen
 
