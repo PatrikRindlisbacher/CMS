@@ -15,6 +15,8 @@
 - URL-Rewrite nutzen  Diese Option entfernt das index.php aus der URL. muss mod_rewrite (Apache) 
   Dieser Punkt muss noch gut Dokuemtiert werden !!!!
 
+- Das Ganze Thmema das jede Seite / Inhalt einen H1 hat ist noch zu eruieren 
+
 - Inhalt -> Beiträge -> Optionen -> Bearneitungslayout ->  Bilder und Links im Frontend --> Anzeigen
 
 - Inhalt -> Beiträge -> Optionen -> Beiträge -> Position der Beitragsinfo -> darunter (HTML Ausgabe)
