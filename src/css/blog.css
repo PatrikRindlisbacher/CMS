@@ -1,0 +1,35 @@
+
+
+/* Standard-Grid: 4 Spalten */
+.blog-items {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+/* Breite für col2 */
+.blog-item.col2 {
+  grid-column: span 2;
+}
+
+/* Responsive: max. 768px = 2 Spalten */
+@media (max-width: 768px) {
+  .blog-items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .blog-item.col2 {
+    grid-column: span 2;
+  }
+}
+
+/* Responsive: max. 480px = 1 Spalte */
+@media (max-width: 480px) {
+  .blog-items {
+    grid-template-columns: 1fr;
+  }
+
+  .blog-item.col2 {
+    grid-column: span 1;
+  }
+}
