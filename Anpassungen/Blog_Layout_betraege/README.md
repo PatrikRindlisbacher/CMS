@@ -9,6 +9,14 @@ Ausgabe in der Console gesamtes Item Objekt Baum
 echo '<script>console.log("item OBJ:", ' . json_encode($item) . ');</script>';
 
 
+
+Zugriff auf RAW Wert von einem Custom Listen Feld
+-------------------------------------------------
+$rawValue = $item->jcfields['bloglayout']->rawvalue;
+
+
+
+
 // Wert vom Feld mit name = "bloglayout"
 $bloglayoutValue = '';
 foreach ($item->jcfields as $f) if ($f->name === 'bloglayout') $bloglayoutValue = $f->value;
