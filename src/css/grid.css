@@ -1,5 +1,14 @@
 
 
+body.wrapper-fluid .site-grid {                                                 /* Grid-Layout für die gesamte Seite */
+  grid-template-columns:                                                        /* Spaltenstruktur des Grids */     
+    [full-start] minmax(0, 1fr)                                                 /* 1fr = 100% der Breite, flexibel */
+    [main-start] repeat(8, minmax(0, 12.5%)) /* 100% / 8 = 12.5% */             /* 8 Spalten, jede 12.5% der Breite */       
+    [main-end] minmax(0, 1fr)                                                   /* 1fr = 100% der Breite, flexibel */                
+    [full-end];                                                                 /* Ende des Grids */          
+}
+
+
 /* ====================  seitlichen Innenabstand zu entfernen bei fluiden Layout ======================= */
 body.wrapper-fluid header > .grid-child,
 body.wrapper-fluid footer > .grid-child {

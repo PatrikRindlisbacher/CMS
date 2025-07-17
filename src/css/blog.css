@@ -1,18 +1,20 @@
+/* ============================================================
+   ÄUSSERE STRUKTUR: GRID-LAYOUT FÜR .blog-items
+   ============================================================ */
 
-
-/* Standard-Grid: 4 Spalten */
+/* Standard-Grid: 4 gleich breite Spalten */
 .blog-items {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
 }
 
-/* Breite für col2 */
+/* Artikel mit .col2 sollen zwei Grid-Spalten einnehmen */
 .blog-item.col2 {
   grid-column: span 2;
 }
 
-/* Responsive: max. 768px = 2 Spalten */
+/* Tablet: max. 768px → 2 Spalten */
 @media (max-width: 768px) {
   .blog-items {
     grid-template-columns: repeat(2, 1fr);
@@ -23,7 +25,7 @@
   }
 }
 
-/* Responsive: max. 480px = 1 Spalte */
+/* Mobil: max. 480px → 1 Spalte */
 @media (max-width: 480px) {
   .blog-items {
     grid-template-columns: 1fr;
@@ -31,5 +33,67 @@
 
   .blog-item.col2 {
     grid-column: span 1;
+  }
+}
+
+
+
+/* ============================================================
+   INNERE STRUKTUR NUR FÜR .col2 ARTIKEL
+   ============================================================ */
+
+/* .col2-Layout: Bild links, Text rechts (horizontal mit Flexbox) */
+.blog-item.col2 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 1.5rem;           /* Abstand zwischen Bild und Text */
+  flex-wrap: nowrap;
+}
+
+/* Bild-Container im col2-Artikel */
+.blog-item.col2 figure.item-image {
+  margin: 0;
+  padding: 0.5rem;       /* kleiner Innenabstand zum Hintergrund */
+  float: none !important;
+  flex: 1 1 40%;         /* Startgröße 40%, wächst bei Platz */
+  box-sizing: border-box;
+}
+
+/* Bild selbst (img-Tag) im Container – responsive */
+.blog-item.col2 figure.item-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 0.25rem;  /* optional: leicht abgerundet */
+}
+
+/* Textbereich daneben */
+.blog-item.col2 .item-content {
+  flex: 1 1 60%;
+  min-width: 0;
+}
+
+
+/* ============================================================
+   MOBIL-DARSTELLUNG FÜR .col2
+   ============================================================ */
+
+@media (max-width: 768px) {
+  /* Bild und Text untereinander statt nebeneinander */
+  .blog-item.col2 {
+    flex-direction: column;
+  }
+
+  /* Bild-Container mobil: volle Breite */
+  .blog-item.col2 figure.item-image {
+    width: 100%;
+    max-width: 100%;
+    padding: 0.5rem 0;  /* oben/unten etwas Luft */
+  }
+
+  /* Textbereich mobil: volle Breite */
+  .blog-item.col2 .item-content {
+    width: 100%;
   }
 }
