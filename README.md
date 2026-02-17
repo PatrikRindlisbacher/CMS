@@ -18,7 +18,7 @@ Vorbereitung:
 Alle Source CSS Dateien liegen im Ordner src/css
 
 Benutzung:
-starten -->    npx postcss src/css/main.css -o dist/main.css
+starten -->    npx postcss src/css/main.css -o dist/user.css
 
 Ergebnis -->   im DIST Ordner ist die fertige USER.CSS
 
