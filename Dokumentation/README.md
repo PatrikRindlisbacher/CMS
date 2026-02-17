@@ -1,7 +1,7 @@
 - Joomla Installieren und alle Informationen notieren
 
-- Favicon hochladen in Ordner             media\system\images kopieren
-- und Logos und Hintergrund hochladen     images\
+- Favicon hochladen in Ordner             --> media\system\images kopieren
+- und Logos und Hintergrund hochladen     --> images\
 
 - SEO SEF Suchmaschinen-freundliche URL JA = https://www.deine-seite.ch/produkte/kategorie/produktname .htaccess  
    Weitere Einstellungen sind im Plugin „System – SEF“ zu finden.  
