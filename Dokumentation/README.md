@@ -1,4 +1,4 @@
-- Joomla Installieren
+- Joomla Installieren und alle Informationen notieren
 
 - Favicon hochladen in Ordner         media\system\images kopieren
 - und Bilder und Logos hochladen
