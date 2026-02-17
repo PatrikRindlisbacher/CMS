@@ -5,15 +5,15 @@
 [Zur Dokumentation für Joomla Inhalt anpassen ](Dokumentation/README.md)
 
 # Installation:
-- Codespace öffnen
+- Codespace öffnen im Github
 - npm install um die abhänigen Module zu installieren  
-    "postcss": "^8.5.5"  
-    "postcss-cli": "^11.0.1"  
-    "postcss-discard-comments": "^7.0.4"  
-    "postcss-import": "^16.1.0"  
+    npm install postcss"  
+    npm install postcss-cli  
+    npm install postcss-discard-comments  
+    npm install postcss-import  
     
 - chmod +x ./node_modules/.bin/postcss
-
+Alle Source CSS liegen im Ordner src/css
 Benutzung:
 starten -->    npx postcss src/css/main.css -o dist/main.css
 
