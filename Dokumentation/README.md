@@ -23,7 +23,7 @@
 - Inhalt -> Beiträge -> Optionen -> Beiträge -> Position der Beitragsinfo -> darunter (HTML Ausgabe)
    (Damit auch Bilder geändert werden können voa Frontend)
 
-- Default setzen für Beiträge --> "Pendenz Doku-Bild noch erstellen"
+- Defaults setzen für Beiträge Anzeige Optionen --> "Pendenz Doku-Bild noch erstellen"
 
 - System -> Verwalten -> Erweiterungen -> Com_content  ????? 
 
