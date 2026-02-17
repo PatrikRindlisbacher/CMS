@@ -3,7 +3,7 @@
 - Favicon hochladen in Ordner         media\system\images kopieren
 - und Bilder und Logos hochladen
 
-- SEO Suchmaschinen-freundliche URL JA = https://www.deine-seite.ch/produkte/kategorie/produktname .htaccess  
+- SEO SEF Suchmaschinen-freundliche URL JA = https://www.deine-seite.ch/produkte/kategorie/produktname .htaccess  
    Weitere Einstellungen sind im Plugin „System – SEF“ zu finden.  
    Website-Domain =  
    Dateiendung durch Weiterleitung erzwingen =  
