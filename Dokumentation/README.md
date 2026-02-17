@@ -1,7 +1,7 @@
 - Joomla Installieren und alle Informationen notieren
 
-- Favicon hochladen in Ordner         media\system\images kopieren
-- und Bilder und Logos hochladen
+- Favicon hochladen in Ordner             media\system\images kopieren
+- und Logos und Hintergrund hochladen     images\
 
 - SEO SEF Suchmaschinen-freundliche URL JA = https://www.deine-seite.ch/produkte/kategorie/produktname .htaccess  
    Weitere Einstellungen sind im Plugin „System – SEF“ zu finden.  
@@ -27,9 +27,10 @@
 
 - System -> Verwalten -> Erweiterungen -> Com_content  ????? 
 
+TEMPLATE Cassiopeia
 - Child Template erstellen -> mit Name -> Keine unnötigen Overrides unabsichtlich erstellen !!!
 
-- Logo im Child Template hinterlegen
+- Logo im Child Template hinterlegen   --> Teplates --> Style bearbeiten 
    --> Stiky Header Fluid ???
 
 - Kontakt erstellen für Kontaktormular
