@@ -18,7 +18,7 @@
 
 - Das Ganze Thmema das jede Seite / Inhalt einen H1 hat ist noch zu eruieren 
 
-- Inhalt -> Beiträge -> Optionen -> Bearneitungslayout ->  Bilder und Links im Frontend --> Anzeigen
+- Inhalt -> Beiträge -> Optionen -> Bearbeitungslayout ->  Bilder und Links im Frontend --> Anzeigen
 
 - Inhalt -> Beiträge -> Optionen -> Beiträge -> Position der Beitragsinfo -> darunter (HTML Ausgabe)
    (Damit auch Bilder geändert werden können voa Frontend)
