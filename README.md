@@ -4,7 +4,7 @@
 
 [Zur Dokumentation für Joomla Inhalt anpassen ](Dokumentation/README.md)
 
-# Installation:
+# Installation Codespace um User.css zu erstellen:
 - Codespace öffnen im Github
 - npm install um die abhänigen Module zu installieren  
     npm install postcss"  
